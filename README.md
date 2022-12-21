@@ -17,9 +17,9 @@ If you use this code for your research, please consider citing:
 
 # Try it on Colab
 
-Installing all the dependencies might be tricky and you need a computer with a CUDA enabled GPU. To get started fast you can just try [this](https://colab.research.google.com/drive/13xkSkvPaF5GU6Wpf35nVHUdP77oBVHlT#scrollTo=xXxbMrF4fdZs) demo developed by [Mathias Gatti](https://github.com/mathigatti) using Google Colab.
+Below is a link to a colab notebook that uses the pretrained model as a starting point and continues the training with the own cars dataset.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13xkSkvPaF5GU6Wpf35nVHUdP77oBVHlT#scrollTo=xXxbMrF4fdZs)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14DwTXkziv_YPUAL5fLP6xvYugMLhedNk)
 
 
 # Project Page
@@ -83,6 +83,10 @@ Each .dat file in the provided data contain: </br>
 **Input image, ground truth point cloud.**</br>
 <img src="./Docs/images/car_example.png" width = "350px" />
 ![label](./Docs/images/car_example.gif)
+
+---------------------------
+In this fork the model should be trained especially on cars. The created dataset can be found here: 
+https://drive.google.com/drive/folders/1IciBiNefuOnV5PRx_sgJsg80NoXlPXbB?usp=share_link
 
 # Training
     python train.py

@@ -19,7 +19,7 @@ from p2m.utils import *
 from p2m.models import GCN
 from p2m.fetcher import *
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+#os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 
 # Set random seed
 seed = 1024
@@ -63,7 +63,7 @@ config=tf.ConfigProto()
 config.allow_soft_placement=True
 sess = tf.Session(config=config)
 sess.run(tf.global_variables_initializer())
-#model.load(sess)
+model.load(sess)
 
 # Train graph model
 train_loss = open('record_train_loss.txt', 'a')
